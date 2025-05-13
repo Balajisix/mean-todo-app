@@ -4,7 +4,12 @@ const app = express();
 
 // allow requests from outside resources like postman, or your frontend if you choose to build that out
 const cors = require("cors");
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://mean-todo-app-frontend.vercel.app",
+    methods: ["PUT", "DELETE", "POST", "GET"]
+  })
+)
 
 // app will serve and receive data in a JSON format
 app.use(express.json());

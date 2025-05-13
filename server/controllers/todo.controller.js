@@ -3,7 +3,7 @@ const Todo = require("../models/todo.model");
 
 const initialData = (req, res) => {
   res.json({
-    test: "✅ Welcome to MERN-Todofy! - See Live Web URL for this Server - https://mern-todofy.netlify.app",
+    test: "✅ Welcome to MERN vercel app",
   });
 };
 
